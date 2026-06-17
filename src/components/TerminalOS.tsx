@@ -13,8 +13,8 @@ const TerminalOS = ({ isOpen, onClose }: TerminalProps) => {
     {
       command: 'init',
       output: (
-        <div className="text-ai">
-          VedanshOS v2.0.4 loaded.<br />
+        <div className="text-ai font-mono">
+          VedanshOS v3.0.0 (Node: Active) loaded.<br />
           Type <span className="text-accent">'help'</span> to see available commands.
         </div>
       )
@@ -34,7 +34,7 @@ const TerminalOS = ({ isOpen, onClose }: TerminalProps) => {
     switch (trimmed) {
       case 'help':
         output = (
-          <ul className="list-inside space-y-1 text-text2">
+          <ul className="list-inside space-y-1 text-text2 font-mono">
             <li><span className="text-accent">help</span>    - Show this message</li>
             <li><span className="text-accent">projects</span> - List flagship projects</li>
             <li><span className="text-accent">skills</span>   - List technical capabilities</li>
@@ -46,20 +46,20 @@ const TerminalOS = ({ isOpen, onClose }: TerminalProps) => {
         break;
       case 'projects':
         output = (
-          <div className="text-text2">
-            [1] PurifAI - Advanced AI-powered data cleaning & synthetic data generation.<br/>
-            [2] RBAC Dashboard - Secure role-based route management system.<br/>
-            [3] MediMeet - Healthcare appointment & WebRTC platform.
+          <div className="text-text2 font-mono space-y-1">
+            [1] Falsity API - Enterprise claim processing & verdict state engine (Fastify, Redis, Postgres).<br/>
+            [2] MediMeet - Calendar slot reservation WebRTC patient app (Next.js, Neon, Vonage).<br/>
+            [3] RBAC Dashboard - Fine-grained frontend navigation client (React, RTK, Tailwind).
           </div>
         );
         break;
       case 'skills':
         output = (
-          <div className="text-text2 grid grid-cols-2 gap-2">
-            <div><span className="text-ai">Frontend:</span> React, TypeScript, Tailwind, Framer Motion</div>
-            <div><span className="text-ai">Backend:</span> Node.js, Express, Python, Flask</div>
-            <div><span className="text-ai">AI/ML:</span> Pandas, Scikit-Learn, Prompt Engineering</div>
-            <div><span className="text-ai">Database:</span> MongoDB, SQL</div>
+          <div className="text-text2 grid grid-cols-1 md:grid-cols-2 gap-2 font-mono">
+            <div><span className="text-ai">Frontend:</span> React.js, Next.js, TS, Tailwind, RTK</div>
+            <div><span className="text-ai">Backend:</span> Node.js, Fastify, REST, JWT, RBAC</div>
+            <div><span className="text-ai">Database:</span> PostgreSQL, MongoDB, Prisma, Redis</div>
+            <div><span className="text-ai">Ops/Languages:</span> Docker, Git, Actions, SQL, C++</div>
           </div>
         );
         break;

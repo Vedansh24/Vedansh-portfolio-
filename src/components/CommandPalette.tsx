@@ -9,9 +9,10 @@ const CommandPalette = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: Rea
     { id: 'home', title: 'Home', icon: Home, section: true },
     { id: 'about', title: 'About Me', icon: User, section: true },
     { id: 'projects', title: 'Projects', icon: Briefcase, section: true },
-    { id: 'ai', title: 'AI Vision', icon: Cpu, section: true },
+    { id: 'building', title: 'Active Builds', icon: Cpu, section: true },
     { id: 'skills', title: 'Tech Stack', icon: Layers, section: true },
-    { id: 'hire-me', title: 'Hire Me', icon: Briefcase, section: true },
+    { id: 'experience', title: 'Work Experience', icon: Briefcase, section: true },
+    { id: 'why-hire-me', title: 'Why Hire Me', icon: User, section: true },
     { id: 'contact', title: 'Contact', icon: Mail, section: true },
     { id: 'https://github.com/Vedansh24', title: 'GitHub Profile', icon: Github, external: true },
   ];

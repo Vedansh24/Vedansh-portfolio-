@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          
+
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
               Let's build something <span className="gradient-text">extraordinary.</span>
@@ -36,13 +36,13 @@ const Contact = () => {
             </p>
 
             <div className="space-y-4">
-              <a href="mailto:hello@vedanshwagh.com" className="flex items-center gap-4 p-4 rounded-xl glass border border-white/5 hover:border-accent/40 hover:-translate-y-1 transition-all group interactive w-full max-w-md">
+              <a href="mailto:vedanshwagh1@gmail.com" className="flex items-center gap-4 p-4 rounded-xl glass border border-white/5 hover:border-accent/40 hover:-translate-y-1 transition-all group interactive w-full max-w-md">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
                   <Mail size={24} />
                 </div>
                 <div>
                   <div className="text-xs text-text3 font-mono uppercase tracking-widest mb-1">Email</div>
-                  <div className="font-semibold text-white">hello@vedanshwagh.com</div>
+                  <div className="font-semibold text-white">vedanshwagh1@gmail.com</div>
                 </div>
               </a>
 
@@ -70,7 +70,7 @@ const Contact = () => {
 
           <div className="relative">
             <div className="absolute inset-0 bg-accent/5 blur-[100px] rounded-full"></div>
-            <motion.form 
+            <motion.form
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -79,30 +79,30 @@ const Contact = () => {
             >
               <div className="flex flex-col gap-2">
                 <label htmlFor="name" className="text-xs font-mono text-text3 uppercase tracking-widest">Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
+                <input
+                  type="text"
+                  id="name"
                   required
                   className="w-full bg-surface/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-accent focus:bg-surface transition-colors"
-                  placeholder="John Doe"
+                  placeholder="Your Name Here"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="email" className="text-xs font-mono text-text3 uppercase tracking-widest">Email</label>
-                <input 
-                  type="email" 
-                  id="email" 
+                <input
+                  type="email"
+                  id="email"
                   required
                   className="w-full bg-surface/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-accent focus:bg-surface transition-colors"
-                  placeholder="john@example.com"
+                  placeholder="xyz@example.com"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="message" className="text-xs font-mono text-text3 uppercase tracking-widest">Message</label>
-                <textarea 
-                  id="message" 
+                <textarea
+                  id="message"
                   required
                   rows={4}
                   className="w-full bg-surface/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-accent focus:bg-surface transition-colors resize-none"
@@ -110,8 +110,8 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 disabled={formStatus !== 'idle'}
                 className="mt-2 w-full py-4 bg-accent hover:bg-accent2 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 interactive disabled:opacity-70"
               >

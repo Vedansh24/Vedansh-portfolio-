@@ -6,8 +6,10 @@ const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'projects', label: 'Projects' },
-  { id: 'ai', label: 'AI Vision' },
-  { id: 'hire-me', label: 'Hire Me' },
+  { id: 'building', label: 'Active Builds' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'why-hire-me', label: 'Why Hire Me' },
 ];
 
 const Navbar = ({ onOpenCmd }: { onOpenCmd: () => void }) => {

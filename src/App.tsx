@@ -8,7 +8,7 @@ import TerminalOS from './components/TerminalOS';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
-import AISection from './components/sections/AISection';
+import WhatImBuilding from './components/sections/WhatImBuilding';
 import Skills from './components/sections/Skills';
 import Experience from './components/sections/Experience';
 import GitHub from './components/sections/GitHub';
@@ -78,7 +78,7 @@ function App() {
             <Hero />
             <About />
             <Projects />
-            <AISection />
+            <WhatImBuilding />
             <Skills />
             <Experience />
             <GitHub />
