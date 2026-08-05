@@ -163,8 +163,8 @@ const Hero = () => {
             </button>
 
             <a
-              href="/Vedansh_Wagh_Resume.pdf"
-              download="Vedansh_Wagh_Resume.pdf"
+              href="/Vedansh_Wagh_Full-stack-developer.pdf"
+              download="Vedansh_Wagh_Full-stack-developer.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 bg-surface border border-white/5 hover:border-white/20 text-text rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 flex items-center gap-2 interactive font-mono text-sm"
