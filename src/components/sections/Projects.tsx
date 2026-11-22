@@ -12,9 +12,13 @@ const Projects = () => {
     { id: 'frontend', label: 'Frontend Dashboards' }
   ];
 
-  const filteredProjects = portfolioData.projects.filter(p => 
-    filter === 'all' ? true : p.category.includes(filter)
-  );
+  const filteredProjects = portfolioData.projects.filter(p => {
+    if (filter === 'all') return true;
+    const cat = p.category.toLowerCase();
+    if (cat.includes(filter)) return true;
+    if (cat.includes('full stack') || cat.includes('fullstack')) return true;
+    return false;
+  });
 
   return (
     <section id="projects" className="py-28 relative bg-bg border-t border-white/5">
@@ -85,7 +89,7 @@ const Projects = () => {
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 className="p-2.5 bg-surface rounded-xl text-text2 hover:text-white hover:bg-white/10 transition-colors border border-white/5 interactive"
-                                title="View Source Code"
+                                title={project.id === 'viva-goa-realty' ? "View GitHub Profile" : "View Source Code"}
                               >
                                 <Github size={18} />
                               </a>

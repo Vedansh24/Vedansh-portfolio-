@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Send, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, Linkedin, Send, CheckCircle2 } from 'lucide-react';
 import { portfolioData } from '../../data/portfolio';
 
 const Contact = () => {
@@ -36,7 +36,23 @@ const Contact = () => {
             </p>
 
             <div className="space-y-4">
-              <a href="mailto:vedanshwagh1@gmail.com" className="flex items-center gap-4 p-4 rounded-xl glass border border-white/5 hover:border-accent/40 hover:-translate-y-1 transition-all group interactive w-full max-w-md">
+              <a 
+                href="tel:+919039467289" 
+                className="flex items-center gap-4 p-4 rounded-xl glass border border-white/5 hover:border-accent/40 hover:-translate-y-1 transition-all group interactive w-full max-w-md"
+              >
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <div className="text-xs text-text3 font-mono uppercase tracking-widest mb-1">Phone</div>
+                  <div className="font-semibold text-white">+91 9039467289</div>
+                </div>
+              </a>
+
+              <a 
+                href="mailto:vedanshwagh1@gmail.com" 
+                className="flex items-center gap-4 p-4 rounded-xl glass border border-white/5 hover:border-accent/40 hover:-translate-y-1 transition-all group interactive w-full max-w-md"
+              >
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
                   <Mail size={24} />
                 </div>
@@ -46,17 +62,12 @@ const Contact = () => {
                 </div>
               </a>
 
-              <a href={portfolioData.personal.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl glass border border-white/5 hover:border-white/30 hover:-translate-y-1 transition-all group interactive w-full max-w-md">
-                <div className="w-12 h-12 rounded-lg bg-surface2 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
-                  <Github size={24} />
-                </div>
-                <div>
-                  <div className="text-xs text-text3 font-mono uppercase tracking-widest mb-1">GitHub</div>
-                  <div className="font-semibold text-white">github.com/Vedansh24</div>
-                </div>
-              </a>
-
-              <a href={portfolioData.personal.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl glass border border-white/5 hover:border-[#0a66c2]/40 hover:-translate-y-1 transition-all group interactive w-full max-w-md">
+              <a 
+                href={portfolioData.personal.linkedin} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-4 p-4 rounded-xl glass border border-white/5 hover:border-[#0a66c2]/40 hover:-translate-y-1 transition-all group interactive w-full max-w-md"
+              >
                 <div className="w-12 h-12 rounded-lg bg-[#0a66c2]/10 flex items-center justify-center text-[#0a66c2] group-hover:scale-110 transition-transform">
                   <Linkedin size={24} />
                 </div>

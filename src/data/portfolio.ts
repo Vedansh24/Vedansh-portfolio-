@@ -1,6 +1,6 @@
 import {
   Code, Layout, Server, Database, Terminal,
-  ShieldCheck, Activity, Cpu, Layers
+  ShieldCheck, Activity, Cpu, Layers, Building2
 } from 'lucide-react';
 
 export const portfolioData = {
@@ -15,12 +15,30 @@ export const portfolioData = {
       { label: "API Operations/sec", value: "10k+" },
       { label: "Core Technologies", value: "12+" }
     ],
+    email: "vedanshwagh1@gmail.com",
+    phone: "+91 9039467289",
     github: "https://github.com/Vedansh24",
-    linkedin: "https://linkedin.com/in/vedanshwagh",
-    resumeUrl: "#resume-link", // Update this with real PDF
+    linkedin: "https://www.linkedin.com/in/vedanshwagh0106/ ",
+    resumeUrl: "public/Vedansh_Wagh_Full-stack-developer.pdf", // Update this with real PDF
+    photo: "/vedansh.jpg", // Add your photo url here
   },
-  
+
   projects: [
+    {
+      id: "viva-goa-realty",
+      title: "Viva Goa Realty",
+      category: "Full Stack Platform",
+      tagline: "Full Stack Platform",
+      description: "A production-grade real estate marketplace and CRM platform designed to streamline property discovery, lead management, and real estate operations for buyers, sellers, agents, and administrators.",
+      problem: "Traditional real estate workflows often involve fragmented property listings, disconnected lead management, and manual administrative operations. Viva Goa Realty brings these workflows together through a unified marketplace and CRM platform.",
+      architecture: "Engineered with Next.js App Router, React, TypeScript, and Fastify backend APIs backed by Neon PostgreSQL and Prisma ORM. Implements authentication, role-based access control, property listing workflows, CRM lead management architecture, and an admin dashboard with responsive operational workflows.",
+      learned: "Full-stack application architecture, REST API design and integration, relational database modelling with Neon and Prisma, authentication and authorization, CRM and lead lifecycle management, and scalable, maintainable application development.",
+      tech: ["Next.js", "React", "TypeScript", "Fastify", "Prisma", "PostgreSQL", "Neon", "Tailwind CSS"],
+      live: "https://vivagoarealty.com/",
+      github: "https://github.com/Vedansh24",
+      icon: Building2,
+      featured: true
+    },
     {
       id: "falsity-api",
       title: "Falsity API",
@@ -31,7 +49,7 @@ export const portfolioData = {
       architecture: "Layered architecture featuring Fastify controllers, services, repositories, and Middlewares. Utilizes Prisma ORM with PostgreSQL for structured claims relational storage and Redis for queuing evidence verification jobs and caching verdict results.",
       learned: "Mastered building asynchronous workflow engines, developing granular role-based access control (RBAC) middleware, and optimizing system reliability under simulated concurrent user load.",
       tech: ["Fastify", "TypeScript", "Prisma", "PostgreSQL", "JWT", "Redis"],
-      live: "https://github.com/Vedansh24/falsity-api", 
+      live: "https://github.com/Vedansh24/falsity-api",
       github: "https://github.com/Vedansh24/falsity-api",
       icon: Cpu,
       featured: true
@@ -49,21 +67,6 @@ export const portfolioData = {
       live: "https://medimeet-flame.vercel.app",
       github: "https://github.com/Vedansh24/medimeet",
       icon: Activity,
-      featured: true
-    },
-    {
-      id: "rbac-dashboard",
-      title: "RBAC Dashboard",
-      category: "frontend",
-      tagline: "Security Dashboard",
-      description: "Role-based dashboard with protected routes, permissions, dynamic navigation, and scalable frontend architecture.",
-      problem: "Enterprise dashboards often leak UI elements or administrative routes to unauthorized roles, causing security vulnerabilities and poor user experience.",
-      architecture: "React modular component architecture combined with Redux Toolkit for centralized auth/permission state management. Higher-Order Components (HOCs) protect routes client-side, with navigation bars rendered dynamically based on user permission matrices.",
-      learned: "Developed granular frontend permission policies, decoupled UI state from backend auth state, and built custom theme systems using Tailwind CSS.",
-      tech: ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Vite"],
-      live: "https://rbac-dashboard-amenses.vercel.app",
-      github: "https://github.com/Vedansh24/rbac-dashboard",
-      icon: ShieldCheck,
       featured: true
     }
   ],
@@ -104,7 +107,7 @@ export const portfolioData = {
   experience: [
     {
       id: "amenses",
-      role: "Engineering Intern",
+      role: "Software Engineer",
       company: "Amenses Innovations",
       date: "March 2026 – Present",
       description: "Building production-ready backend systems and modular APIs with layered architecture for enterprise clients.",

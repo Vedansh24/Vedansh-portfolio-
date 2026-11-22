@@ -19,7 +19,7 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-tight text-white">
             Engineering Timeline
           </h2>
-          <p className="text-text2 text-lg">Vetted work history and systems engineering internships.</p>
+          <p className="text-text2 text-lg">Professional experience and hands-on software engineering contributions.</p>
         </div>
 
         <div className="relative max-w-4xl mx-auto mt-16 px-4 md:px-0">

@@ -47,9 +47,9 @@ const TerminalOS = ({ isOpen, onClose }: TerminalProps) => {
       case 'projects':
         output = (
           <div className="text-text2 font-mono space-y-1">
-            [1] Falsity API - Enterprise claim processing & verdict state engine (Fastify, Redis, Postgres).<br/>
-            [2] MediMeet - Calendar slot reservation WebRTC patient app (Next.js, Neon, Vonage).<br/>
-            [3] RBAC Dashboard - Fine-grained frontend navigation client (React, RTK, Tailwind).
+            [1] Viva Goa Realty - Production-grade real estate marketplace & CRM platform (Next.js, Fastify, Neon).<br/>
+            [2] Falsity API - Enterprise claim processing & verdict state engine (Fastify, Redis, Postgres).<br/>
+            [3] MediMeet - Calendar slot reservation WebRTC patient app (Next.js, Neon, Vonage).
           </div>
         );
         break;

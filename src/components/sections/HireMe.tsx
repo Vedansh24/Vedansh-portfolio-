@@ -72,7 +72,7 @@ const HireMe = () => {
   return (
     <section id="why-hire-me" className="py-28 bg-bg2 relative overflow-hidden border-t border-white/5">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[140px] pointer-events-none"></div>
-      
+
       <div className="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="flex items-center gap-4 mb-12">
           <div className="h-[1px] w-12 bg-white/10"></div>
@@ -129,8 +129,9 @@ const HireMe = () => {
           className="mt-16 text-center border-t border-white/5 pt-12"
         >
           <p className="text-text3 text-sm font-mono mb-4">READY FOR DEPLOYMENT INTO TECH TEAMS</p>
-          <a 
-            href={portfolioData.personal.resumeUrl} 
+          <a
+            href={portfolioData.personal.resumeUrl}
+            download="Vedansh_Wagh_Full-stack-developer.pdf"
             className="inline-flex items-center gap-2.5 px-8 py-4 bg-white text-bg font-bold rounded-xl hover:-translate-y-0.5 transition-all interactive shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] text-sm"
           >
             Download Resume (PDF)
